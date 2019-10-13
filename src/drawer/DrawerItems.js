@@ -5,6 +5,8 @@ import {
 import {
   ExpandLess, ExpandMore,
 } from '@material-ui/icons';
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -46,7 +48,13 @@ export default function DrawerItems(props) {
         <MenuItem className={classes.drawerText} component={Link} to="/about">about</MenuItem>
         <MenuItem className={classes.drawerText} component={Link} to="/projects">projects</MenuItem>
         <MenuItem className={classes.drawerText} component={Link} to="/resume">resume</MenuItem>
-        <MenuItem className={classes.drawerText} onClick={clickSocialMedia}>social media</MenuItem>
+        <MenuItem
+          className={classes.drawerText}
+          onClick={clickSocialMedia}
+        >
+          social media
+          {openSocialMedia ? <ArrowDropDownIcon /> : <ArrowDropUpIcon />}
+        </MenuItem>
         <Collapse in={openSocialMedia} timeout="auto" unmountOnExit>
           <List component="div">
             <ListItem component="a" href="https://linkedin.com/in/btoy" button className={classes.nested}>
@@ -59,7 +67,13 @@ export default function DrawerItems(props) {
             </ListItem>
           </List>
         </Collapse>
-        <MenuItem className={classes.drawerText} onClick={clickQuickContacts}>quick contact</MenuItem>
+        <MenuItem
+          className={classes.drawerText}
+          onClick={clickQuickContacts}
+        >
+          quick contact
+          {openQuickContacts ? <ArrowDropDownIcon /> : <ArrowDropUpIcon />}
+        </MenuItem>
         <Collapse in={openQuickContacts} timeout="auto" unmountOnExit>
           <List component="div">
             <ListItem component="a" href="tel:7789197095" button className={classes.nested}>

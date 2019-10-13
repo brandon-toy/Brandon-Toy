@@ -8,13 +8,11 @@ import photo from './goldstream.jpg';
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    // display: 'flex',
-    // [theme.breakpoints.up('xs')]: {
-    //   margin: 'auto',
-    // },
     maxWidth: 400,
-    // justifyContent: 'center',
-    // height: 250,
+    [theme.breakpoints.down('xs')]: {
+      marginTop: '15%',
+      width: 250,
+    },
   },
   content: {
     display: 'flex',
@@ -25,6 +23,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'center',
     width: 400,
     height: 400,
+    [theme.breakpoints.down('xs')]: {
+      width: 250,
+      height: 250,
+    },
   },
   location: {
     fontSize: '1.5vw',

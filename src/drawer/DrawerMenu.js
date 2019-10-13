@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   mobilePaper: {
     width: 250,
+    backgroundColor: '#2B3E50',
   },
   drawer: {
     width: 300,
@@ -53,12 +54,14 @@ const useStyles = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
 }));
 
-export default function DrawerMenu(props) {
+export default function DrawerMenu() {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(true);
+
   const clickMobileOpen = () => {
     setMobileOpen(!mobileOpen);
   };
+
   return (
     <div className={classes.root}>
       <Hidden xsDown implementation="css">
@@ -73,14 +76,17 @@ export default function DrawerMenu(props) {
           <div className={classes.name}>Brandon Toy</div>
           <div className={classes.subName}>
               My dream is to travel the
-            <span role="img" aria-label="" label="emoji"> 🌏</span>
+            <span style={{ fontSize: '15px' }} role="img" aria-label="" label="emoji">
+              <span> </span>
+              🌏
+            </span>
           </div>
-          {/* <Divider /> */}
           <DrawerItems />
         </Drawer>
       </Hidden>
       <Hidden smUp implementation="css">
         <Drawer
+          className={classes.drawer}
           variant="temporary"
           open={!mobileOpen}
           classes={{
@@ -99,14 +105,9 @@ export default function DrawerMenu(props) {
           </Collapse>
         </AppBar>
       </Hidden>
-      {/* <main className={classes.content}>
-        <div className={classes.toolbar} /> */}
       <Container fixed>
-        {/* <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} /> */}
         <Main />
       </Container>
-      {/* <Main /> */}
-      {/* </main> */}
     </div>
   );
 }
