@@ -1,10 +1,8 @@
 import React from 'react';
 import {
-  Typography, Grid, Avatar, makeStyles, Card,
-  CardMedia, CardContent, CardHeader, ListItemText, List, ListItem, Chip,
+  Typography, Grid, Avatar, makeStyles, Card, CardContent, CardHeader, ListItemText, List, Chip,
   CardActionArea,
 } from '@material-ui/core';
-import { sizing } from '@material-ui/system';
 import boldLogo from '../../images/boldlogo.jpg';
 import starbucks from '../../images/starbucks.png';
 import python from '../../images/python.jpeg';

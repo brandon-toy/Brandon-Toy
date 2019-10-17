@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Typography, Grid, Avatar, makeStyles, Card, CardMedia, CardContent, CardHeader,
-} from '@material-ui/core';
+import { Grid, makeStyles } from '@material-ui/core';
 import '../background.scss';
 import WorkExperience from './ResumeComponents/WorkExperience';
 import Info from './ResumeComponents/Info';
@@ -9,7 +7,10 @@ import Info from './ResumeComponents/Info';
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    paddingTop: 25,
+    paddingTop: 50,
+    [theme.breakpoints.up('lg')]: {
+      paddingLeft: 50,
+    },
   },
   gridroot: {
     [theme.breakpoints.down('sm')]: {

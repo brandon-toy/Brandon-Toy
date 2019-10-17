@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Typography, Grid, Avatar, makeStyles, Card, CardMedia, CardContent, CardHeader,
+  Typography, makeStyles, Card, CardMedia, CardContent,
 } from '@material-ui/core';
 import image from '../../images/me.jpg';
 

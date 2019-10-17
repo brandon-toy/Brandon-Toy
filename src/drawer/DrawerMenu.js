@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Drawer, makeStyles, Hidden, Divider, AppBar, IconButton, Collapse, Grid, Typography, Container,
+  Drawer, makeStyles, Hidden, AppBar, IconButton, Collapse, Container,
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import DrawerItems from './DrawerItems';

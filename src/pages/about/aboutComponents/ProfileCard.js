@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Card, makeStyles, Typography, Grid, CardContent,
+  Card, makeStyles, Typography, CardContent,
 } from '@material-ui/core';
 import CardMedia from '@material-ui/core/CardMedia';
 import photo from './goldstream.jpg';

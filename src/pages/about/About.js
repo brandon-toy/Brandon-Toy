@@ -4,7 +4,7 @@ import ProfileCard from './aboutComponents/ProfileCard';
 import ModalButton from './aboutComponents/ModalButton';
 import '../background.scss';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   containerDiv: {
     display: 'flex',
     paddingTop: '7%',

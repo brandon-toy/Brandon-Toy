@@ -2,15 +2,12 @@ import React from 'react';
 import {
   List, ListItem, MenuList, MenuItem, Collapse, makeStyles, ListItemText,
 } from '@material-ui/core';
-import {
-  ExpandLess, ExpandMore,
-} from '@material-ui/icons';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPhone, faEnvelope, faMobile } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faMobile } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import './Drawer.css';
 
