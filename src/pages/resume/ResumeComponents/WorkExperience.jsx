@@ -113,7 +113,7 @@ export default function WorkExperience() {
                     <ListItemText>Agile Software Development</ListItemText>
                     <ListItemText>Worked with React, JavaScript & PHP</ListItemText>
                     <ListItemText>
-                      <a href="https://boldcommerce.com/builderscode#slide=10" style={{ textDecoration: 'none', color: 'black' }}>BUILDERS Code</a>
+                      <a target="__blank" href="https://boldcommerce.com/builderscode#slide=10" style={{ textDecoration: 'none', color: 'black' }}>BUILDERS Code</a>
                     </ListItemText>
                   </List>
                 </Grid>

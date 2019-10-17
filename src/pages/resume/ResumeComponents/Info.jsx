@@ -7,12 +7,13 @@ import image from '../../images/me.jpg';
 const useStyles = makeStyles((theme) => ({
   root: {
     [theme.breakpoints.down('xs')]: {
-      margin: 'auto',
       width: 300,
     },
   },
   introResume: {
-    marginLeft: 25,
+    [theme.breakpoints.down('sm')]: {
+      marginLeft: 0,
+    },
     marginTop: 5,
   },
   photo: {

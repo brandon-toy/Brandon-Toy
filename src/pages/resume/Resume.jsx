@@ -8,9 +8,14 @@ import Info from './ResumeComponents/Info';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    display: 'flex',
+    paddingTop: 25,
+  },
+  gridroot: {
     [theme.breakpoints.down('sm')]: {
       paddingTop: 25,
-      marginLeft: '2%',
+      margin: 10,
+      justifyContent: 'center',
     },
     [theme.breakpoints.up('md')]: {
       marginLeft: 50,
@@ -21,6 +26,9 @@ const useStyles = makeStyles((theme) => ({
   rightSide: {
     [theme.breakpoints.up('lg')]: {
       paddingLeft: 50,
+    },
+    [theme.breakpoints.down('sm')]: {
+      justifyContent: 'center',
     },
   },
 }));
@@ -33,14 +41,12 @@ export default function Resume() {
       <Grid
         container
         direction="row"
-        // justify="flex-start"
-        // alignItems="flex-start"
-        className={classes.root}
+        className={classes.gridroot}
       >
         <Grid item>
           <Info />
         </Grid>
-        <Grid className={classes.rightSide} item xs={4}>
+        <Grid className={classes.rightSide} item>
           <WorkExperience />
         </Grid>
       </Grid>

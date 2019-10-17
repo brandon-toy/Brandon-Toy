@@ -46,7 +46,7 @@ export default function DrawerItems(props) {
     <div className={classes.root}>
       <MenuList>
         <MenuItem className={classes.drawerText} component={Link} to="/about">about</MenuItem>
-        <MenuItem className={classes.drawerText} component={Link} to="/projects">projects</MenuItem>
+        {/* <MenuItem className={classes.drawerText} component={Link} to="/projects">projects</MenuItem> */}
         <MenuItem className={classes.drawerText} component={Link} to="/resume">resume</MenuItem>
         <MenuItem
           className={classes.drawerText}
