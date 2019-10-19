@@ -7,10 +7,7 @@ import Info from './ResumeComponents/Info';
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    paddingTop: 50,
-    [theme.breakpoints.up('lg')]: {
-      paddingLeft: 50,
-    },
+    margin: 'auto',
   },
   gridroot: {
     [theme.breakpoints.down('sm')]: {
@@ -20,13 +17,17 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up('md')]: {
       marginLeft: 50,
-      paddingTop: 25,
+      paddingTop: 50,
     },
     display: 'flex',
+    justifyContent: 'center',
   },
   rightSide: {
     [theme.breakpoints.up('lg')]: {
       paddingLeft: 50,
+    },
+    [theme.breakpoints.down('md')]: {
+      paddingTop: 25,
     },
     [theme.breakpoints.down('sm')]: {
       justifyContent: 'center',
