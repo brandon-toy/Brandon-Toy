@@ -37,7 +37,7 @@ export default function ModalButton() {
               btoy
           </Typography>
           <br />
-          <Typography variant="p">
+          <Typography variant="body1">
             I am a student at the University of Victoria striving to grow and learn through new experiences.
             I am currently living in Winnipeg and on co-op at the company, Bold Commerce.
             I have a passion for all things food. I love talking about food, making food, and of course, eating food.
