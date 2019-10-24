@@ -5,7 +5,7 @@
 ### Technologies used
  - React.js
  - Material-Ui
- - Scss
+ - Sass
 
 ### Running locally
 To run locally on your machine do the normal yarny stuff
