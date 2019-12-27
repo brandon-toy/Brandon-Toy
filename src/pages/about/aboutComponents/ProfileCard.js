@@ -44,13 +44,13 @@ export default function ProfileCard() {
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
           <span aria-label="emoji" role="img">️️✈️</span>
-          Winnipeg, Manitoba
+          Vancouver, BC
           <br />
           <span aria-label="emoji" role="img">🏫</span>
           University of Victoria - Computer Science
           <br />
           <span aria-label="emoji" role="img">💻</span>
-          Software Developer Co-op at Bold Commerce
+          Looking for 2020 summer internships
         </Typography>
       </CardContent>
     </Card>

@@ -110,9 +110,7 @@ export default function WorkExperience() {
                   <List>
                     <ListItemText>Agile Software Development</ListItemText>
                     <ListItemText>Worked with React, JavaScript & PHP</ListItemText>
-                    <ListItemText>
-                      <a target="__blank" href="https://boldcommerce.com/builderscode#slide=10" style={{ textDecoration: 'none', color: 'black' }}>BUILDERS Code</a>
-                    </ListItemText>
+                    <ListItemText>Used Docker to simulate Concourse CI</ListItemText>
                   </List>
                 </Grid>
                 <Grid style={{ paddingTop: '5px' }} item>

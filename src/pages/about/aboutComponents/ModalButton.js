@@ -39,11 +39,11 @@ export default function ModalButton() {
           <br />
           <Typography variant="body1">
             I am a student at the University of Victoria striving to grow and learn through new experiences.
-            I am currently living in Winnipeg and on co-op at the company, Bold Commerce.
+            I am currently studying in beautiful Victoria, BC. I am currently looking for summer 2020 internships/co-ops.
             I have a passion for all things food. I love talking about food, making food, and of course, eating food.
             As a good Canadian, I grew up playing hockey and I love watching and talking all things Canucks/NHL related.
             I am always down to get bubble tea or a green tea frappuccino (not a coffee drinker).
-            If you would like to meet and talk to me, shoot me a DM or email!
+            If you would like to meet and talk to me, shoot me a DM or email! 
             I would love to meet you!
           </Typography>
         </Paper>
